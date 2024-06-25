@@ -1,0 +1,337 @@
+* {
+  margin: 0 ;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-text-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(15, 20, 22);
+}
+
+/* Navigation Bar */
+
+.navbar {
+  height: 55px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px solid black;
+  background-color: rgb(46, 45, 51); 
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+}
+
+.title-1 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 10px;
+  letter-spacing: 1.5px;
+}
+
+.title-1:hover {
+  color: rgb(80, 152, 181);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.navbar-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;  
+}
+
+.title-2 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-transform: uppercase;
+  background-color: rgb(46, 45, 51);
+}
+
+.list-item {
+  
+  font-weight: 300;
+  padding: 0 10px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.link-a {
+  cursor: pointer;
+}
+
+.link-a:hover {
+  color: rgb(80, 152, 181);
+  transition: 0.3s ease-in;
+}
+
+.img-1 {
+  width: 50px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Content */
+
+.content {
+  
+
+margin-top: -10px;
+margin-right: auto;
+margin-left: auto;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 39%;
+  left: 0%;
+  justify-content: center;
+}
+
+.text-box {
+  background-color: whitesmoke;
+  text-decoration: none;
+  width: 600px;
+  background: none;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  resize: none;
+  
+}
+
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 0.7rem;
+  text-transform: uppercase; 
+  
+}
+
+input {
+  font-size: 0.7rem;
+  padding: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  background: none;
+  border: 1px solid white; 
+  outline: none;
+  border-right: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+
+.btn-1 {
+  width: 100px;
+  border: none;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  background-color: rgb(46, 172, 32); 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase; 
+  box-shadow: 2px 3px 12px 1px rgb(15, 20, 22);
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in;
+}
+
+.btn-1:hover {
+  background-color: rgb(80, 152, 181);
+  cursor: pointer;
+  
+}
+
+.content-bar {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  position: relative;
+}
+
+.content-text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+}
+
+.train-img {
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(30%);
+  margin-left: -10px;
+}
+
+.content-text h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  font-weight:300;
+  padding: 10px;
+}
+
+.content-text p {
+  font-size: 1.5rem;
+  font-style: oblique;
+  color: white;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+}
+
+/* Content Two */
+
+.content-2 {
+  margin: 50px auto;
+  border-radius: 10px;
+  width: 70%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.content-data {
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-prg {
+  letter-spacing: 1.3px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.p-black {
+  color: rgb(0, 183, 255);
+}
+
+/* Timetables  */
+
+.timetables {
+ margin: 80px auto;
+ color: rgb(15, 20, 22);
+ display: flex;
+}
+
+.stations {
+  flex: 30%;
+}
+
+
+.text-3 {
+margin: 10px;
+padding-top: 12px;
+height: 60px;
+text-align: center;
+font-size: 1.5rem;
+font-weight: 200;
+letter-spacing: 1.5px;
+max-width: 500px;
+transition: 0.7ms ease-in-out;
+background-color: rgb(15, 20, 22);
+color: white;
+border-radius: 5px;
+border: 1px solid rgb(0, 183, 255);
+
+}
+
+.text-3:hover {
+  box-shadow: 1px 3px 5px rgb(0, 183, 255);
+  cursor: pointer;
+}
+
+.table-routes {
+  
+  flex: 70%;
+  background-color: rgb(15, 20, 22);
+  color: white;
+  border-radius: 10px;
+}
+
+.div-1 {
+  display: flex;
+  width: 98%;
+  margin: 10px auto;
+  padding: 5px;
+  
+}
+
+.div-2 {
+  margin-right: auto;
+}
+
+.route-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-variant: small-caps;
+}
+.time {
+  font-size: 1.5rem;
+  color: rgb(0, 183, 255);
+}
+
+.time-routes {
+  display: flex;
+  border: 1px solid;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Time Schedules  */ 
+
+.time-schedules {
+  width: 80%;
+  color: white;
+  display: flex;
+  border: 1px solid;
+  margin: 10px;
+}
+
+
+
+
+
